@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Mitroi Stefan">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Gourmet Burgers</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="">Gourmet Burgers</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse" >
+            <ul class="navbar-nav me-auto ">
+              <li class="nav-item">
+                <a class="nav-link" href="">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Locations</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit" >Search</button>
+            </form>
+          </div>
+
+        </div>
+
+      </nav>
+      <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/carousel1.jpg" class="d-block w-100" alt="first slide">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Made to order</h5>
+              <p>Using only the finestingredients.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/carousel2.jpg" class="d-block w-100" alt="second slide">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Over 50 types on our menu</h5>
+              <p>Or build your own!</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+  </header>
+  <main>
+      <div class="container text-center my-5">
+        <div class="row">
+          <div class="col-md-4 ">
+            <img class="rounded-circle" src="images/open.jpg" alt="restaurant image">
+            <h2> Over 50 restaurants</h2>
+            <p>Treat yourself next time you are in the area!</p>
+            <p> <a class="btn btn-secondary" href="">View details &raquo; </a></p>
+          </div>
+          <div class="col-md-4 bg">
+            <img  class="rounded-circle" src="images/challenge.jpg" alt="eating challange image">
+            <h2>Fancy a challange?</h2>
+            <p>Why not try one of our famous burger eating challanges?</p>
+            <p> <a class="btn btn-secondary" href="">View details &raquo; </a></p>
+          </div>
+          <div class="col-md-4 ">
+            <img class="rounded-circle" src="images/sign.jpg" alt="sign image">
+            <h2>Established 2003</h2>
+            <p>Our reputation does not lie, over 18 years of high quality</p>
+            <p> <a class="btn btn-secondary" href="">View details &raquo; </a></p>
+          </div>
+          </div>
+        </div>
+        <div class="container-fluid bg-dark">
+          <div class="row text-center">
+            <div class="col-md-7 text-light fst-italic">
+              <p>Sign up for exclusive offers...</p>
+            </div>
+            <div class="col-md-5">
+              <button class="btn btn-success "type="button" data-bs-toggle="modal" data-bs-target="#Modal"> Sign Up Here!
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Sign up for exclusive offers!</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+          <form>
+              <div class="mb-3">
+                <label for="inputname" class="form-label">Name</label>
+                <input type="text" placeholder="Enter your name" class="form-control" id="inputname" >
+            </div>
+              <div class="mb-3">
+              <label for="inputemail" class="form-label">Email</label>
+              <input type="email" placeholder="Enter your email adress" class="form-control" id="inputemail" aria-describedby="emailhelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+              </div>
+              <div class="mb-3">
+                <label for="#textarea" class="form-label">Adress</label>
+                <textarea class="form-control" placeholder="Enter your adress" id="textarea"></textarea>
+              </div>
+
+
+          </div>
+          <div class="modal-footer justify-content-between">
+            <div class="form-ceck-inline form-check">
+              <input type="checkbox" class="form-check-input" id="emailcheck" value="option1">
+              <label class="form-check-label" for="emailcheck">Contact by email</label>
+            </div>
+            <div class="form-ceck-inline form-check">
+              <input type="checkbox" class="form-check-input" id="postcheck" value="option2">
+              <label class="form-check-label" for="postcheck">Contact by post</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+          </form>
+        </div>
+      </div>
+</div>
+
+
+    </main>
+    <footer class="bf-light container-fluid py-3 ">
+      <p class="float-end mb-o"> <a class="text-decoration-none me-2" href="#">Back to top</a> </p>
+      <p class="mb-0 ms-2">&copy; 2021 Gourmet Burgers &middot;
+        <a class="text-decoration-none"  href="#">Home</a>&middot;
+        <a class="text-decoration-none"  href="#">Locations</a>
+      </p>
+
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  </body>
+</html>
